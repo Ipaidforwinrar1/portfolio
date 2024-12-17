@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#toc">Table of Contents</a>
+        <a href="#prm">Project Roadmap Milestones</a>
+        <a href="#outline">Outline</a>
+        <a href="#response">Response</a>
+        <a href="#draft">Draft</a>
+        <a href="#sources">Sources</a>
+        <a href="#output">Output</a>
+        <a href="#reflection">Reflection</a>
+    </nav>
+
+    <!-- Sections -->
+    <section id="home">
+        <div>
+            <h1>Welcome to My Portfolio</h1>
+            <p>Eng 1044: English for Computer Technology Studies</p>
+            <p>by Cyrus Tan Chin Xiong, Tan Jia Liang, Pang Wei Sheng</p>
+        </div>
+    </section>
+
+    <section id="toc">
+        <div>
+            <h1>Table of Contents</h1>
+            <ul>
+                <li>Home</li>
+                <li>Project Roadmap Milestones</li>
+                <li>Outline</li>
+                <li>Response</li>
+                <li>Draft</li>
+                <li>Sources</li>
+                <li>Output</li>
+                <li>Reflection</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="prm">
+        <div>
+            <h1>Project Roadmap Milestones</h1>
+            <p>Weekly plan of the project from Week 1-13.</p>
+        </div>
+    </section>
+
+    <section id="outline">
+        <div>
+            <h1>Outline</h1>
+            <p>Revised/corrected version of the outline.</p>
+        </div>
+    </section>
+
+    <section id="response">
+        <div>
+            <h1>Written Response</h1>
+            <p>Revised/corrected version x2/3 samples.</p>
+        </div>
+    </section>
+
+    <section id="draft">
+        <div>
+            <h1>Draft</h1>
+            <p>Full draft copies of the research paper including Intro, Body, Conclusion & Reference List.</p>
+        </div>
+    </section>
+
+    <section id="sources">
+        <div>
+            <h1>Sources</h1>
+            <p>Minimum 9 full-text academic/peer-reviewed sources, all must be cited.</p>
+        </div>
+    </section>
+
+    <section id="output">
+        <div>
+            <h1>Output</h1>
+            <p>Research Paper & Evidence of Shared/Published Output.</p>
+        </div>
+    </section>
+
+    <section id="reflection">
+        <div>
+            <h1>Reflection</h1>
+            <p>Each student must write a self-reflection and peer-review (Max 500 words).</p>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- JavaScript for Scroll Animations -->
+    <script>
+        // Select all sections
+        const sections = document.querySelectorAll("section");
+
+        // Function to reveal sections on scroll
+        function revealSections() {
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+
+                if (sectionTop < windowHeight - 100) {
+                    section.classList.add("show");
+                }
+            });
+        }
+
+        // Trigger on scroll and load
+        window.addEventListener("scroll", revealSections);
+        window.addEventListener("load", revealSections);
+    </script>
+
+</body>
+</html>

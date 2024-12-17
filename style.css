@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    font-family: Calibri, Arial;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    background: rgb(44,44,44);
+    background: linear-gradient(140deg, rgba(44,44,44,1) 10%, rgba(66,66,66,1) 30%, rgba(128,128,128,1) 80%);
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f4f4f4;
+}
+
+/* Section Styles */
+section {
+    background: rgb(245,245,220);
+    background: linear-gradient(0deg, rgba(245,245,220,1) 20%, rgba(157,193,131,1) 80%);
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0; /* Start hidden */
+    transform: translateY(30px); /* Slide-in effect */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+#home {
+    font-size: larger;
+}
+#toc {
+    margin: 250px 150px 250px;
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.4)
+}
+
+#prm {
+    margin: 250px 150px 250px;
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.4)
+}
+
+#outline {
+    margin: 250px 150px 250px;
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.4)
+}
+
+#response {
+    margin: 200px 150px 200px;
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.4)
+}
+
+#draft {
+    margin: 200px 150px 200px;
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.4)
+}
+
+#sources {
+    margin: 200px 150px 200px;
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.4)
+}
+
+#output {
+    margin: 200px 150px 200px;
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.4)
+}
+
+#reflection {
+    margin: 200px 150px 200px;
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.4)
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+
+
