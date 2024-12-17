@@ -37,7 +37,7 @@ section {
     background: rgb(245,245,220);
     background: linear-gradient(0deg, rgba(245,245,220,1) 20%, rgba(157,193,131,1) 80%);
     height: 100vh; /* Full viewport height */
-    display: flex;
+    box-shadow: 2px 6px 10px rgba(245, 245, 220, 0.4);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -48,45 +48,62 @@ section {
 
 #home {
     font-size: larger;
+    display: flex;
 }
 #toc {
     margin: 250px 150px 250px;
-    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.4)
+    display: flex
 }
 
 #prm {
     margin: 250px 150px 250px;
-    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.4)
 }
 
 #outline {
-    margin: 250px 150px 250px;
-    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.4)
+    margin: 250px 150px 0px;
+}
+
+.mutton{
+    background-color: beige;
+    margin: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+}
+
+#fullscreenbtn:hover{
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 #response {
     margin: 200px 150px 200px;
-    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.4)
+
 }
 
 #draft {
     margin: 200px 150px 200px;
-    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.4)
+    text-align: left;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.format {
+    text-align: justify;
 }
 
 #sources {
     margin: 200px 150px 200px;
-    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.4)
+    padding: 50px;
+    text-align: left;
 }
 
 #output {
     margin: 200px 150px 200px;
-    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.4)
 }
 
 #reflection {
     margin: 200px 150px 200px;
-    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.4)
+
 }
 
 section.show {
