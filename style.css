@@ -64,19 +64,27 @@ section {
 
 #toc {
     display: flex;
-    margin: 150px 100px 150px;
+    margin: 200px auto; 
+    width: 80%;
+    max-width: 1200px; 
 }
 
 #prm {
-    margin: 150px 100px 150px;
+    margin: 200px auto; 
+    width: 80%;
+    max-width: 1200px;
 }
 
 #outline{
-    margin: 150px 100px 150px;
+    margin: 200px auto; 
+    width: 80%;
+    max-width: 1200px;
 }
 
 #response {
-    margin: 150px 100px 150px;
+    margin: 200px auto; 
+    width: 80%;
+    max-width: 1200px;
 }
 
 .pdfcontent {
@@ -108,7 +116,9 @@ section {
 #draft {
     text-align: left;
     overflow-y: auto;
-    margin: 150px 100px 150px;
+    margin: 200px auto; 
+    width: 80%;
+    max-width: 1200px;
 }
 
 .format {
@@ -120,15 +130,21 @@ section {
     padding: 50px;
     text-align: left;
     overflow-y: auto;
-    margin: 150px 100px 100px;
+    margin: 200px auto; 
+    width: 80%;
+    max-width: 1200px;
 }
 
 #output {
-    margin: 150px 100px 150px;
+    margin: 200px auto; 
+    width: 80%;
+    max-width: 1200px;
 }
 
 #reflection {
-    margin: 150px 100px 150px;
+    margin: 200px auto; 
+    width: 80%;
+    max-width: 1200px;
 }
 
 section.show {
@@ -159,20 +175,35 @@ h1 {
 
 @media screen and (max-width: 768px) {
     nav {
-        flex-direction: column; /* Stack navigation links */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center; 
+        padding: 5px 0; 
+        height: auto; 
     }
 
     nav a {
-        margin: 5px 0; /* Adjust spacing between links */
+        margin: 5px 10px; 
+        font-size: 14px; 
     }
 
     section {
-        padding: 80px 15px;
+        margin: 50px auto;
+        padding: 20px;
     }
 
-    iframe {
-        height: 200px;
-        width: 90%; 
+    iframe.pdfcontent {
+        height: 250px;
+        width: 100%; 
+    }
+
+    .mutton {
+        padding: 10px 15px;
+        font-size: 14px;
+        margin-top: 10px;
+        width: 80%; /* Full width for better tap */
+        text-align: center;
     }
 }
 
