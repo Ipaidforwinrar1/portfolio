@@ -68,10 +68,10 @@ section {
     margin: 20px;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease,
+    transition: background-color 0.3s ease;
 }
 
-#fullscreenbtn:hover{
+.mutton:hover{
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -89,6 +89,7 @@ section {
 
 .format {
     text-align: justify;
+    line-height: 2rem;
 }
 
 #sources {

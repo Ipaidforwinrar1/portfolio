@@ -55,13 +55,15 @@
 
     <section id="outline"> 
         <h1 style="margin-bottom: 20px;">Research Paper Outline</h1>
-        <iframe id="pdfViewer1" src="research paper outline.pdf" style="width:80%; height:400px; display: block; margin: 0 auto;" frameborder="0" title="view outline" allowfullscreen></iframe>
+        <iframe id="pdfViewer1" src="research paper outline.pdf" style="width:90%; height:500px; display: block; margin: 0 auto;" frameborder="0" title="view outline" allowfullscreen></iframe>
         <button class="mutton" id="fullscreenbtn1">click here to view the document fullscreen</button>
     </section>
 
     <section id="response">
             <h1>Written Response</h1>
-            <p>Revised/corrected version x2/3 samples.</p>
+            <iframe id="pdfViewer4" src="writtenresponseall.pdf" style="width:90%; height:500px; display: block; margin: 0 auto;" frameborder="0" title="view our outline" allowfullscree></iframe>
+            <button class="mutton" id="fullscreenbtn4">click here to view the document fullscreen</button>
+            
     </section>
 
     <section id="draft">
@@ -148,7 +150,7 @@
     <section id="output">
         <div>
             <h1>Output</h1>
-            <iframe id="pdfViewer2" src="research paper.pdf" style="width:80%; height:400px; display: block; margin: 0 auto;" frameborder="0" title="view our outline" allowfullscreen></iframe>
+            <iframe id="pdfViewer2" src="research paper.pdf" style="width:90%; height:500px; display: block; margin: 0 auto;" frameborder="0" title="view our outline" allowfullscreen></iframe>
             <button class="mutton" id="fullscreenbtn2">click here to view the document fullscreen</button>
         </div>
     </section>
@@ -156,7 +158,8 @@
     <section id="reflection">
         <div>
             <h1>Reflection</h1>
-            <p>Each student must write a self-reflection and peer-review (Max 500 words).</p>
+            <iframe id="pdfViewer3" src="selfreflection.pdf" style="width:90%; height:500px; display: block; margin: 0 auto;" frameborder="0" title="view our outline" allowfullscree></iframe>
+            <button class="mutton" id="fullscreenbtn3">click here to view the document fullscreen</button>
         </div>
     </section>
 
@@ -187,7 +190,9 @@
         // Select all fullscreen buttons and associated iframes
 const buttons = [
     { button: document.getElementById('fullscreenbtn1'), iframe: document.getElementById('pdfViewer1') },
-    { button: document.getElementById('fullscreenbtn2'), iframe: document.getElementById('pdfViewer2') }
+    { button: document.getElementById('fullscreenbtn2'), iframe: document.getElementById('pdfViewer2') },
+    { button: document.getElementById('fullscreenbtn3'), iframe:document.getElementById('pdfViewer3')},
+    { button: document.getElementById('fullscreenbtn4'), iframe:document.getElementById('pdfViewer4')}
 ];
 
 // Add event listeners for each button
