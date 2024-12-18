@@ -42,6 +42,7 @@ section {
     background: rgb(245,245,220);
     background: linear-gradient(0deg, rgba(245,245,220,1) 20%, rgba(157,193,131,1) 80%);
     height: 100vh; 
+    padding: 40px;
     box-shadow: 2px 6px 10px rgba(245, 245, 220, 0.4);
     justify-content: center;
     align-items: center;
@@ -54,6 +55,7 @@ section {
 #home {
     font-size: large;
     display: flex;
+    margin-top: auto;
 }
 
 #greeting {
@@ -61,46 +63,52 @@ section {
 }
 
 #toc {
-     margin: 200px 50px 200px;
-     display: flex;
+    display: flex;
+    margin: 150px 100px 150px;
 }
 
 #prm {
-    margin: 200px 50px 200px;
+    margin: 150px 100px 150px;
 }
 
-#outline {
-    margin: 200px 50px 200px;
+#outline{
+    margin: 150px 100px 150px;
+}
+
+#response {
+    margin: 150px 100px 150px;
 }
 
 .pdfcontent {
    height: 500px;
-   width: 80%;
-   margin: auto; 
+   width: 90%;
+   margin: 20px auto; 
+   display: block;
+   border: 2px solid #ccc;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
 }
 
 .mutton{
-    background-color: beige;
-    margin: 20px;
+    background-color: blue;
+    color: white;
+    border: none;
     border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .mutton:hover{
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-#response {
-    margin: 200px 50px 200px;
-
+    background-color: #005bb5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #draft {
-    margin: 200px 50px 200px;
     text-align: left;
-    padding: 20px;
     overflow-y: auto;
+    margin: 150px 100px 150px;
 }
 
 .format {
@@ -109,18 +117,18 @@ section {
 }
 
 #sources {
-    margin: 200px 50px 200px;
     padding: 50px;
     text-align: left;
+    overflow-y: auto;
+    margin: 150px 100px 100px;
 }
 
 #output {
-    margin: 200px 50px 200px;
+    margin: 150px 100px 150px;
 }
 
 #reflection {
-    margin: 200px 50px 0;
-
+    margin: 150px 100px 150px;
 }
 
 section.show {
@@ -130,7 +138,23 @@ section.show {
 
 h1 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
+}
+
+.contact {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.favicon {
+    color: beige;
+    transition: color 0.5s ease;
+}
+
+.favicon:hover {
+    color: blue;
 }
 
 @media screen and (max-width: 768px) {
@@ -147,7 +171,8 @@ h1 {
     }
 
     iframe {
-        height: 200px; /* Adjust iframe height for small screens */
+        height: 200px;
+        width: 90%; 
     }
 }
 
@@ -162,5 +187,6 @@ h1 {
 
     iframe {
         height: 200px; /* Smaller height for very small devices */
+        width: 90%;
     }
 }
