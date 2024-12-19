@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <div class="blur-layer"></div>
 
-    <!-- Navigation Menu -->
     <nav>
         <a href="#home">Home</a>
         <a href="#toc">Table of Contents</a>
@@ -22,7 +22,6 @@
         <a href="#reflection">Reflection</a>
     </nav>
 
-    <!-- Sections -->
     <section id="home">
         <div>
             <h1 id="greeting">Welcome to Our Portfolio!</h1>
@@ -34,23 +33,29 @@
     <section id="toc">
         <div>
             <h1>Table of Contents</h1>
-            <ul>
-                <li>Home</li>
-                <li>Project Roadmap Milestones</li>
-                <li>Outline</li>
-                <li>Response</li>
-                <li>Draft</li>
-                <li>Sources</li>
-                <li>Output</li>
-                <li>Reflection</li>
+            <ul class="toc-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#prm">Project Roadmap Milestones</a></li>
+                <li><a href="#outline">Outline</a></li>
+                <li><a href="#response">Response</a></li>
+                <li><a href="#draft">Draft</a></li>
+                <li><a href="#sources">Sources</a></li>
+                <li><a href="#output">Output</a></li>
+                <li><a href="#reflection">Reflection</a></li>
             </ul>
         </div>
     </section>
 
     <section id="prm">
-        <div>
+        <div class="gallery">
             <h1>Project Roadmap Milestones</h1>
-            <p>Weekly plan of the project from Week 1-13.</p>
+            <div class="galleryitem">
+                <img src="image1.png" alt="roadmap">
+            </div>
+            <div class="galleryitem">
+                <img src="image2.png" alt="roadmap">
+            </div>
+
         </div>
     </section>
 
@@ -71,14 +76,14 @@
             <div>
             <p><strong>1.0 Introduction</strong></p>
             <p class="format">
-                The debate over privacy, then, is one of the hottest debates in this digital and cyber communication era. This is so because the way in which people interact with the world and each other has changed much, sharing, and giving information, since the coming of the digital age. The private sphere used to be one of a personal right. The right to privacy now seems to be a matter so complex and very often quite controversial. 
+                &nbsp;&nbsp;The debate over privacy, then, is one of the hottest debates in this digital and cyber communication era. This is so because the way in which people interact with the world and each other has changed much, sharing, and giving information, since the coming of the digital age. The private sphere used to be one of a personal right. The right to privacy now seems to be a matter so complex and very often quite controversial. 
                 This raises a basic question: Who is responsible for users' data? Should it be the person who collected or the company that profited from it? The same question becomes very valid in the arena of social media. online service and technology platforms, tracking, storing, and analysing personal data. 
                 <br>&nbsp;&nbsp;Debatin et al. (2009) show how social networking sites, while offering convenience and connectivity, also introduce considerable privacy risks. These platforms are built upon the collection of user data, often without clear consent or full disclosure to users. They therefore argue that the platforms have created a kind of "privacy paradox" in that, although users are concerned about privacy, they usually do not take sufficient steps to protect their information, and companies continue to exploit this gap. 
                 Although, users are given some control over their privacy settings, companies should bear the primary responsibility for protecting user data, as they not only manage the features of the platform while also adhering to ethical and legal standards in ensuring transparency and security.  
             </p>
             <p><strong>2.0 User's control of features</strong></p>
             <p class="format">
-                The reason company must bear the responsibility of protecting user’s data is because the company control the user’s features. For instance, Rivadeneira et al. (2023) discuss how the (Internet of things) IoT systems integrate models that ensure the privacy of users’ data rights into the design of their platforms. 
+                &nbsp;&nbsp;The reason company must bear the responsibility of protecting user’s data is because the company control the user’s features. For instance, Rivadeneira et al. (2023) discuss how the (Internet of things) IoT systems integrate models that ensure the privacy of users’ data rights into the design of their platforms. 
                 They emphasize that companies should have to implement user privacy in the design and by default through strict measures such as data storage in secure environments and automatic encryption, because user data is automatically protected without the manual intervention by the users. This proactive way puts the burden on the companies to make sure that their operations on privacy are compliant, and data handling is secure by default, which supports the thesis that the companies must handle user’s data with care.
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;Similarly, Debatin et al. (2009) explore the gap between the users' expressed concerns about privacy and their actual behaviours on Facebook. The study shows that users often do not engage with their privacy settings or fully understanding the consequences of their sharing habits. For instance, many Facebook users share their own personal information without adjusting their privacy settings, exposing them to potential data breaches.
                 This shows that even when users are given the power to control their privacy, companies still play a significant role in the protection of user data. For instance, Facebook has been criticized for allowing the users personal data to be exposed despite privacy settings. This shows that user behaviour alone cannot guarantee secure protection in terms of privacy.
@@ -89,7 +94,7 @@
             </p>
             <p><strong>3.0 Users are paying for their data’s protection</strong></p>
             <p class="format">
-                The protection of data is the companies’ responsibilities because the users are paying the company money to use their services and are expecting their data to be securely protected. It becomes an important corporate responsibility for any company in the digital economy, where the users are paying customers.
+                &nbsp;&nbsp;The protection of data is the companies’ responsibilities because the users are paying the company money to use their services and are expecting their data to be securely protected. It becomes an important corporate responsibility for any company in the digital economy, where the users are paying customers.
                 This is much broader than mere legal compliance, ethical and trust-building actions go hand in hand with privacy. The combined understanding from Aldboush & Ferdous (2023), Steele (2022), and Gellert & Gutwirth (2017) points out that it is needed to integrate strong data protection measures into organizational functions to meet user expectations and uphold social norms.
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;Steele (2022) drives this argument further by framing data protection within the broader concept of corporate social responsibility. According to Steele (2022), regulations like the General Data Protection Regulation (GDPR) set a floor minimum, but to meet ethical expectations companies need to go far beyond the floor instead of just meeting it.
                 Consumers think that data privacy, especially for paid services, as a part of what they are buying. Not only must companies abide by laws, but they also need to show that they can live up to the ethical principles. This alignment creates brand loyalty within consumers and strengthens reputation.
@@ -101,7 +106,7 @@
             </p>
             <p><strong>4.0 Counterargument/Rebuttal</strong></p>
             <p class="format">
-                Although the articles discussed previously agrees that the companies must bear the burden of the users’ privacy, but the users also play a crucial role for their privacy because they have the knowledge and tools to protect themselves. As a substantial number of users keeps growing in the digital world, in platforms such as social media. The statistics shows that family applications of the meta company which includes applications such as Instagram, Facebook and WhatsApp reached its daily amount of active people which amounts to around 3.29 billion people on average in September 2024. Noted within INVESTOR RELATIONS, it is stated that it is easy for attackers to search for suitable people to attack from the huge mass of users in social media, from the information that the users willingly shared within social media. 
+                &nbsp;&nbsp;Although the articles discussed previously agrees that the companies must bear the burden of the users’ privacy, but the users also play a crucial role for their privacy because they have the knowledge and tools to protect themselves. As a substantial number of users keeps growing in the digital world, in platforms such as social media. The statistics shows that family applications of the meta company which includes applications such as Instagram, Facebook and WhatsApp reached its daily amount of active people which amounts to around 3.29 billion people on average in September 2024. Noted within INVESTOR RELATIONS, it is stated that it is easy for attackers to search for suitable people to attack from the huge mass of users in social media, from the information that the users willingly shared within social media. 
                 Jain et al. (2021) stated that the personal data shared by users can be exploited by attackers with methods such as phishing, which is implemented by obtaining sensitive information through fake websites or messages. For companies it is difficult to monitor in real time about these threats as the different variation and spread of these threats is easier within social media.
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;On the other hand, this shows the users lacking awareness and them putting too much trust on these platforms. Jain et al. (2021) highlights some guidelines for users to secure their own privacy on these platforms, which are becoming more important when online social media platforms and networks have become an integral part of everyone’s life. 
                 First, the users should choose a strong password which contains at least 8 letters with numbers and symbols mixed within, and users should not use the same password for all their accounts. Second, users should be careful on what they share, as some users directly or indirectly write their personal information in their posts. Third, users should avoid sharing their current locations, being unable to do this may allow users to be targeted by attackers allowing them to easily commit crimes such as robbery in their real life if they know where you are and what you are doing at the time. 
@@ -111,12 +116,12 @@
             </p>
             <p><strong>5.0 Conclusion</strong></p>
             <p class="format">
-                In conclusion, while users have a significant role to play in the protection of their privacy, the ultimate responsibility lies with the companies that collect and manage the information. As argued above, companies must incorporate efficient privacy mechanisms at the design stages of their platforms, ensuring transparency, encryption of data, and adherence to legal and ethical standards. Though users might have some control over their privacy settings, very few people really know how to protect their information or understand the associated risks. Apart from this, companies must also listen to their users so that they can design a more user-friendly platform.
+                &nbsp;&nbsp;&nbsp;&nbsp;In conclusion, while users have a significant role to play in the protection of their privacy, the ultimate responsibility lies with the companies that collect and manage the information. As argued above, companies must incorporate efficient privacy mechanisms at the design stages of their platforms, ensuring transparency, encryption of data, and adherence to legal and ethical standards. Though users might have some control over their privacy settings, very few people really know how to protect their information or understand the associated risks. Apart from this, companies must also listen to their users so that they can design a more user-friendly platform.
                 The responsibility rests with businesses in terms of creating a secure environment that respects user privacy, especially in paid services, where consumers expect both legal compliance and ethical data handling. 
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;What it means is that individual users can only help protect their data through prudent behaviour and awareness, but it stays a business obligation to exercise effective and clear data protection. Moving ahead, companies will have to embrace the spirit of trust and ethics for data privacy, which, in addition to meeting the requirement of law, will only forge lasting relationships with customers. In the digital age, privacy is not an add-on; it is more of a service that must be put in the foremost priority for the safety and security of the data provided by the users.
             </p>
             <p><strong>References</strong></p>
-            <ol>
+            <ol id="referencesformat">
                 <li>Aldboush, H. H. H., & Ferdous, M. (2023). Building Trust in Fintech: An analysis of ethical and privacy considerations in the intersection of big data, AI, and customer trust. International Journal of Financial Studies, 11(3), 90. https://doi.org/10.3390/ijfs11030090</li>
                 <li>Debatin, B., Lovejoy, J. P., Horn, A., & Hughes, B. N. (2009). Facebook and online privacy: attitudes, behaviors, and unintended consequences. Journal of Computer-Mediated Communication, 15(1), 83–108. https://doi.org/10.1111/j.1083-6101.2009.01494.x</li>
                 <li>Internet Society. (2019, July 2). Principles for responsible data handling. Retrieved November 22, 2024, from https://www.internetsociety.org/policybriefs/responsible-data-handling/</li>
@@ -133,7 +138,7 @@
     <section id="sources">
         <div>
             <h1>Sources</h1>
-            <ol>
+            <ol id="sourcesformat">
                 <li>Aldboush, H. H. H., & Ferdous, M. (2023). Building Trust in Fintech: An analysis of ethical and privacy considerations in the intersection of big data, AI, and customer trust. International Journal of Financial Studies, 11(3), 90. https://doi.org/10.3390/ijfs11030090</li>
                 <li>Debatin, B., Lovejoy, J. P., Horn, A., & Hughes, B. N. (2009). Facebook and online privacy: attitudes, behaviors, and unintended consequences. Journal of Computer-Mediated Communication, 15(1), 83–108. https://doi.org/10.1111/j.1083-6101.2009.01494.x</li>
                 <li>Internet Society. (2019, July 2). Principles for responsible data handling. Retrieved November 22, 2024, from https://www.internetsociety.org/policybriefs/responsible-data-handling/</li>
@@ -164,9 +169,9 @@
     </section>
 
     <div class="contact">
-        <H1>Contact Us</H1>
-        <a class="favicon" href="mailto:24035115@imail.sunway.edu.my"><i class="fas fa-envelope"></i> Email Me</a>
-        <a class="favicon" href="https://github.com/Ipaidforwinrar1" target="_blank"><i class="fab fa-github"></i> Github</a>
+        <h2>Contact Us</h2>
+        <a href="mailto:24035115@imail.sunway.edu.my"><i class="fas fa-envelope"></i> Email Me</a>
+        <a href="https://github.com/Ipaidforwinrar1" target="_blank"><i class="fab fa-github"></i> Github</a>
     </div>
 
     <!-- JavaScript for Scroll Animations -->
@@ -237,6 +242,70 @@ const greetings = [
 
         // Change the word every 2 seconds
         setInterval(updateGreeting, 2000);
+        const emojis = ["🌟", "✨", "🎉", "🚀", "🔥", "🌈", "🎵", "💻", "📚"];
+    
+    // Number of emojis to display
+    const emojiCount = 80;
+    
+    // Function to generate random positions and sizes
+    function generateRandomEmoji() {
+        const body = document.body;
+    
+        for (let i = 0; i < emojiCount; i++) {
+            const emoji = document.createElement("div");
+            emoji.classList.add("emoji");
+            emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+    
+            // Randomize position
+            const x = Math.random() * 95; // Percentage across width
+            const y = Math.random() * 95; // Percentage across height
+    
+            // Randomize size
+            const size = Math.random() * 50 + 20; // Between 20px and 70px
+    
+            // Randomize rotation
+            const rotation = Math.random() * 360;
+    
+            // Apply styles
+            emoji.style.left = `${x}%`;
+            emoji.style.top = `${y}%`;
+            emoji.style.fontSize = `${size}px`;
+            emoji.style.transform = `rotate(${rotation}deg)`;
+    
+            body.appendChild(emoji);
+        }
+    }
+    
+    // Call the function on page load
+    window.onload = generateRandomEmoji;
+  // Get all navbar links
+  const navLinks = document.querySelectorAll("nav a");
+
+  // Add scroll event listener
+  window.addEventListener("scroll", () => {
+    let currentSection = "";
+    const sections = document.querySelectorAll("section");
+
+    // Identify the current section in view
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 100; // Adjust for fixed navbar height
+      const sectionHeight = section.offsetHeight;
+
+      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+        currentSection = section.getAttribute("id");
+      }
+    });
+
+    // Highlight the corresponding navbar link
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${currentSection}`) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
     </script>
 
 </body>
